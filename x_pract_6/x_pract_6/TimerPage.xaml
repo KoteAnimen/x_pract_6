@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_6.TimerPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Таймер" FontSize="50" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" TextColor="Coral"/>
+            <TimePicker x:Name="timePicker" HorizontalOptions="Center" Format="HH:mm:ss" FontSize="40"/>
+            <Label x:Name="timer" HorizontalOptions="Center" Text="00:00:00" FontSize="40" TextColor="Black"/>
+            <Button x:Name="btn_Start" Text="Старт" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Start_Clicked"/>
+            <Button x:Name="btn_Restart" Text="Сброс" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Restart_Clicked"/>
+            <Button x:Name="btn_Stop" Text="Стоп" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Stop_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

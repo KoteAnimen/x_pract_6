@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_6.WatchPage">
+
+    
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+        <Label Text="Часы" FontSize="50" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" TextColor="Coral"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+            <Label x:Name="date_Date" Text="" FontSize="40" TextColor="Black" HorizontalOptions="StartAndExpand"/>            
+            <Label x:Name="time_Time" Text="" FontSize="40" TextColor="Black" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>        
+    </StackLayout>
+    
+</ContentPage>

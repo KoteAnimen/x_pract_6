@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_6.StopWatchPage">
+    <StackLayout Orientation="Vertical">
+        <Label Text="Секундомер" FontSize="50" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" TextColor="Coral"/>
+        <Label x:Name="time_StopWatch" Text="00:00:00" FontSize="40" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" TextColor="Black"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand">
+            <Button x:Name="btn_Start" Text="Старт" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Start_Clicked"/>
+            <Button x:Name="btn_Restart" Text="Сброс" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Restart_Clicked"/>
+            <Button x:Name="btn_Stop" Text="Стоп" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Stop_Clicked"/>
+            <Button x:Name="btn_Flag" Text="Зафиксировать" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Flag_Clicked"/>
+        </StackLayout>
+        <StackLayout x:Name="Stack" Orientation="Vertical">
+            
+        </StackLayout>        
+
+    </StackLayout>
+</ContentPage>

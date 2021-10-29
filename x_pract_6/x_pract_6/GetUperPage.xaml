@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="x_pract_6.GetUperPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Будильник" FontSize="50" HorizontalOptions="CenterAndExpand" TextColor="Coral"/>
+            <StackLayout Orientation="Horizontal">
+                <CheckBox x:Name="TurnOnGetUpper" IsChecked="False" HorizontalOptions="CenterAndExpand" Scale="2" CheckedChanged="TurnOnGetUpper_CheckedChanged"/>
+                <Label x:Name="text_TurnOn" Text="Включить" FontSize="30" TextColor="Black" HorizontalOptions="FillAndExpand"/>                
+            </StackLayout>
+            <TimePicker x:Name="timePicker" Format="HH:mm" HorizontalOptions="CenterAndExpand" FontSize="60"/>
+            <Button x:Name="btn_Set" Text="Установить" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Set_Clicked"/>
+            <Button x:Name="btn_Reset" Text="Сбросить" FontSize="14" TextColor="Black" BorderColor="DarkGoldenrod" BorderWidth="2" BorderRadius="20" HorizontalOptions="CenterAndExpand" BackgroundColor="AliceBlue" Clicked="btn_Reset_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
